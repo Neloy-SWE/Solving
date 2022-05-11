@@ -1,17 +1,16 @@
 num1 = int(input())
-list1 = []
 count = 0
 for i in range(num1):
-    list1.append(input())
-    if list1[i]=="Tetrahedron":
+    str1=input()
+    if str1=="Tetrahedron":
         count+=4
-    elif list1[i]=="Cube":
+    elif str1=="Cube":
         count+=6
-    elif list1[i]=="Octahedron":
+    elif str1=="Octahedron":
         count+=8
-    elif list1[i]=="Dodecahedron":
+    elif str1=="Dodecahedron":
         count+=12
-    elif list1[i]=="Icosahedron":
+    elif str1=="Icosahedron":
         count+=20
 print(count)
     
