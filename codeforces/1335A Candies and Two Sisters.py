@@ -8,6 +8,6 @@ for i in range(num1):
             result=(list1[i]-1)/2
         elif list1[i]%2==0:
             result=(list1[i]-2)/2
-        print(result)
+        print(int(result))
     else:
         print(0)
