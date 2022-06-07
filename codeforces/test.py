@@ -1,9 +1,20 @@
-multiple2 = 3
-index = 1
-sum = 0
-while multiple2 < 1000:
-    multiple2 = 3 * index
-    if (multiple2 < 1000):
-        sum = sum + multiple2
-    index = index + 1
-print (sum)
+# num1 = int(input())
+# for i in range(num1):
+#     k = int(input())
+#     a = list(map(int, input().split()))
+
+
+a = list(map(int, input().split()))
+A = []
+B = []
+
+while(len(a)>0):
+    maxa = max(a)
+    B.append(maxa)
+    a.remove(maxa)
+    mina = min(a)
+    A.append(mina)
+    a.remove(mina)
+c = max(A)-min(B)
+print(c)
+
