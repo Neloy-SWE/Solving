@@ -1,8 +1,3 @@
-# num1 = int(input())
-# for i in range(num1):
-#     k = int(input())
-#     a = list(map(int, input().split()))
-
 num1 = int(input())
 for i in range(num1):
     indexa = int(input())
@@ -18,5 +13,3 @@ for i in range(num1):
             if(sorta[i]-sorta[i-1]<ans):
                 ans = sorta[i]-sorta[i-1]
         print(ans)
-
-
