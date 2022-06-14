@@ -1,36 +1,25 @@
 k = int(input())
-a = sorted(list(map(int, input().split())))
-S = []
-D = []
+a = list(map(int, input().split()))
+S = 0
+D = 0
 
 i=0
-while(len(a)>0):
-    start = 0
-    end = len(a)-1
-    if len(a)==1:
-        if i%2==0:
-            S.append(a[0])
-            a.pop(0)
+start = 0
+end = len(a)-1
+while(start<=end):
+    if i%2==0:
+        if a[start]>a[end]:
+            S+=a[start]
+            start+=1
         else:
-            D.append(a[0])
-            a.pop(0)
-        i+=1
+            S+=a[end]
+            end-=1
     else:
-        maxk = max(a[start], a[end])
-        if i%2==0:
-            if maxk==a[start]:
-                S.append(a[start])
-                a.pop(start)
-            else:
-                S.append(a[end])
-                a.pop(end)
+        if a[start]>a[end]:
+            D+=a[start]
+            start+=1
         else:
-            if maxk==a[start]:
-                D.append(a[start])
-                a.pop(start)
-            else:
-                D.append(a[end])
-                a.pop(end)
-        i+=1
-
-print(sum(S), sum(D))
+            D+=a[end]
+            end-=1
+    i+=1
+print(S,D)
