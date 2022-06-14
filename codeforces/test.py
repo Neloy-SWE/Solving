@@ -1,18 +1,25 @@
-# num1 = int(input())
-# for i in range(num1):
+# for i in range(int(input())):
 #     k = int(input())
 #     a = list(map(int, input().split()))
 
-n, q = map(int, input().split())
-product = sorted(list(map(int, input().split())))
-for i in range(q):
-    x, y = map(int, input().split())
-    count=0
-    for j in range(len(product)-x, len(product)-y+1):
-        count+=product[j]
+
+for i in range(int(input())):
+    k = int(input())
+    a = list(map(int, input().split()))
+    b = list(map(int, input().split()))
+    minA = min(a)
+    minB = min(b)
+    count = 0
+    for i in range(k):
+        if a[i]>minA and b[i]>minB:
+            count+=1
+            a[i]=a[i]-1
+            b[i]=b[i]-1
+        elif a[i]>minA and b[i]==minB:
+            count+=1
+            a[i]=a[i]-1
+        elif a[i]==minA and b[i]>minB:
+            count+=1
+            b[i]=b[i]-1
     print(count)
-
-
-
-
 
