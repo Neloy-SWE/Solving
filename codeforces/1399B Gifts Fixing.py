@@ -1,8 +1,3 @@
-# for i in range(int(input())):
-#     k = int(input())
-#     a = list(map(int, input().split()))
-
-
 for i in range(int(input())):
     k = int(input())
     a = list(map(int, input().split()))
@@ -13,4 +8,3 @@ for i in range(int(input())):
     for i in range(k):
         count+=max((a[i]-minA), (b[i]-minB))
     print(count)
-
