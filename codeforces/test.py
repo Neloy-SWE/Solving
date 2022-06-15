@@ -1,4 +1,4 @@
 # for i in range(int(input())):
-#     k = int(input())
+#     n = int(input())
 #     a = list(map(int, input().split()))
-     
+
