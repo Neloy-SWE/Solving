@@ -1,9 +1,3 @@
-# for i in range(int(input())):
-#     k = int(input())
-#     a = list(map(int, input().split()))
-
-
-
 s = input()
 i=1
 ans = ""
@@ -18,4 +12,3 @@ while(i<=len(s)):
         ans+="2"
         i+=2
 print(ans)
-     
