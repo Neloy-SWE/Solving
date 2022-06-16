@@ -6,4 +6,11 @@
 #     a = list(map(int, input().split()))
 
 
-
+n = int(input())
+c=1
+i=0
+while(c<=n):
+    c=c+2
+    n=n-c
+    i+=1
+print(i)
