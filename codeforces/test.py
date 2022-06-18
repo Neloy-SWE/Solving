@@ -8,12 +8,20 @@
 
 
 # n = int(input())
-# c=1
-# i=0
-# while(c<=n):
-#     c=c+2
-#     n=n-c
-#     i+=1
-# print(i)
+# if n==1:
+#     print(1)
+# else:
+#     c=1
+#     i=1
+#     j=2
+#     while(1):
+#         if(c<=n):
+#             c+=j
+#             j+=1
+#             n-=c
+#         else:
+#             break
+#         i+=1
+#     print(i)
 
 
