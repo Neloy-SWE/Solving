@@ -48,9 +48,15 @@
 #                 print(n-j)
 #                 break
 
+# for i in range(int(input())):
+#     n = int(input())
+#     a = list(map(int, input().split()))
+#     b = list(map(int, input().split()))
+#     if n==1:
+#         print(*a)
+#     else:
+#         for j in range(1, len(b)-1):
+#             b[j]=b[j]*2
 
-for i in range(int(input())):
-    n = int(input())
-    for j in range(1,n+1):
-        print(j,end=" ")
-    print()
+#         totalSum = sum(a)+sum(b)-max(b)
+#         print(totalSum)
