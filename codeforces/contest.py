@@ -36,17 +36,6 @@
 #     print(p1, p2, p3)
 
 
-# for i in range(int(input())):
-#     n = int(input())
-#     count = (n&(n-1))
-#     if (count==0):
-#         print(n-1)
-#     else:
-#         for j in range(2,n):
-#             count = count&(n-j)
-#             if (count==0):
-#                 print(n-j)
-#                 break
 
 # for i in range(int(input())):
 #     n = int(input())
