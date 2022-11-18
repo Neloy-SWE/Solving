@@ -6,46 +6,7 @@
 #     a = list(map(int, input().split()))
 
 
-# for i in range(int(input())):
-#     n = int(input())
-#     s1 = list(map(str, input().split()))
-#     s2 = list(map(str, input().split()))
-#     s3 = list(map(str, input().split()))
-#     p1 = 0
-#     p2 = 0
-#     p3 = 0
-#     for j in range(n):
-#         if s1[j] in s2 and s1[j] in s3:
-#             p1+=0
-#         elif s1[j] in s2 or s1[j] in s3:
-#             p1+=1
-#         elif s1[j] not in s2 or s1[j] not in s3:
-#             p1+=3
-#         if s2[j] in s1 and s2[j] in s3:
-#             p2+=0
-#         elif s2[j] in s1 or s2[j] in s3:
-#             p2+=1
-#         elif s2[j] not in s1 or s2[j] not in s3:
-#             p2+=3
-#         if s3[j] in s1 and s3[j] in s2:
-#             p3+=0
-#         elif s3[j] in s1 or s3[j] in s2:
-#             p3+=1
-#         elif s3[j] not in s1 or s3[j] not in s2:
-#             p3+=3
-#     print(p1, p2, p3)
 
 
 
-# for i in range(int(input())):
-#     n = int(input())
-#     a = list(map(int, input().split()))
-#     b = list(map(int, input().split()))
-#     if n==1:
-#         print(*a)
-#     else:
-#         for j in range(1, len(b)-1):
-#             b[j]=b[j]*2
 
-#         totalSum = sum(a)+sum(b)-max(b)
-#         print(totalSum)
