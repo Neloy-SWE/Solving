@@ -9,3 +9,11 @@
 
 
 
+
+import math
+ 
+ 
+for i in range(int(input())):
+    x, y, k = map(int, input().split())
+    output = math.ceil(x/k) + math.ceil(y/k)
+    print(output)
